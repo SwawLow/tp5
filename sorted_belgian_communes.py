@@ -345,7 +345,7 @@ def test_tour_distance(communes, all_communes):
 
 """les fonction fonctionel"""
 
-def verify_order(communes):
+def verify_order(communes: list) -> list:
     """
     pre:
     
@@ -357,7 +357,7 @@ def verify_order(communes):
 
     return nouvel_ordre
 
-def coordinate(commune, all_communes) -> tuple:
+def coordinate(commune: str, all_communes: list) -> tuple:
     """
     pre:
         commune: represent un nom de commune
@@ -373,7 +373,7 @@ def coordinate(commune, all_communes) -> tuple:
             return temp
     return (None,None)
 
-def distance(commune1, commune2, all_communes):
+def distance(commune1: str, commune2: str, all_communes: list) -> int:
     """
     pre:
         commune1: represent un nom de commune
@@ -399,7 +399,7 @@ def distance(commune1, commune2, all_communes):
     
     return sum
 
-def tour_distance(communes, all_communes):
+def tour_distance(communes: list, all_communes: list) -> int:
     """
     pre:
         communes: represent les communes qu'on selectionne
@@ -419,6 +419,7 @@ def tour_distance(communes, all_communes):
     return temp
 
 communes = verify_order(all_communes)
+#stoquée la valeur retourner par verify_order
 
 print(tour_distance(communes,communes))
-#regard la distance pour faire le tour de tous les commun
+#regard la distance pour faire le tour de tous les commune
