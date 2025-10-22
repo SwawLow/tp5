@@ -1,0 +1,13 @@
+import math as m
+
+verify_order()
+retourn une list appartir d'une list dans l'ordre alphabetique
+
+coordinate()
+retourn un tuple sous la form: (x,y) sinon (None,None)
+
+distance()
+retourn et calcule la difference de distance entre 2 commune
+
+tour_distance()
+calcule la distance entre les commune d'index[0] a index[-1] et entre d'index[0] et index[-1] dans la variable communes
